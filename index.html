@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Redressal</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style=" background:linear-gradient(170deg,rgb(231, 231, 117) 10%,#11d6d6 90%);">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-4"> </div>
+            <div class="col-md-4 col-lg-4 ">
+                 <img src="images/gr4.png" alt="not found" width="100%" height="300" />
+            </div>
+            <div class="col-md-4 col-lg-4"></div>
+        </div><br/>
+        <div class="row">
+            <div  >
+               <h3 class="col-md-12 col-lg-12 bg-dark text-white text-center" ><i>GRIEVANCE REDRESSAL</i></h3>
+            </div>
+        </div><br/>
+        <div class="row">
+            <div class="col-md-8 col-lg-8"></div>
+            <div class="col-md-4 col-lg-4 text-end"  >
+               
+                    <a href="adminlogin.jsp"  class="btn btn-outline-success   "><strong>Admin Login</strong> </a>
+                &nbsp;
+                    <a href="status.jsp" class="btn btn-outline-danger  "><strong>Status</strong></a>
+                
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-lg-4"></div>
+            <div class="col-md-4 col-lg-4">
+                <div>
+                    <form action="grievanceaction.jsp" method="post"   >
+                        <div class=" text-center">
+                            <strong > Write your grievance here</strong>
+                        </div><br/>
+                        <div >
+                            <p  style="text-align:left">Please fill out all the fields</p>
+                        </div>
+                        <div>
+                            <strong>USERTYPE</strong>
+                            <select name="usertype" id="usertype" class="form-control form-select" required>
+                                <option value="" selected disabled >--usertype--</option>
+                                 <option  value="admin">Faculty</option>
+                                 <option  value="user">Student</option>
+                            </select>
+                        </div><br/>
+                        <div >
+                            <strong>STUDENT ID/FACULTY ID</strong>
+                            <input type="text" name="user_id" id="user_id" placeholder="Roll Number or Faculty ID" class="form-control" required/>   
+                        </div><br/>
+                        <div>
+                            <strong>FULL NAME</strong>
+                            <input type="text" name="fullname" id="fullname" placeholder="Full name" class="form-control" required/>
+                        </div><br/>
+                        <div>
+                            <strong>GENDER</strong>
+                            <select name="gender" id="gender" class="form-control form-select" required>
+                                <option value="" selected disabled >--gender--</option>
+                                 <option  value="admin">Male</option>
+                                 <option  value="user">Female</option>
+                            </select>
+                        </div><br/>
+                        <div>
+                            <strong>Fill E-mail ID field to get reply</strong>
+                        </div>
+                        <div>
+                            <input type="text" name="emailid" id="emailid" placeholder="ex:prasanna@gmail.com" class="form-control" required/>
+                        </div><br/>
+                        <div>
+                            <textarea name="grievancemsg" id="grievancemsg" class="form-control"></textarea>
+                        </div><br/>
+                        <div class="text-center">
+                            <button type="submit"  class="btn btn-primary text-center">send </button>
+                        </div>
+                        
+                    </form>
+                </div><br/>
+            </div>
+            <div class="col-md-4 col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 bg-dark text-white text-center p-3 ">
+                <footer>&copy;Svcn</footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
